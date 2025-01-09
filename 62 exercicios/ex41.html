@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    alert("Pagamento do monge");
+
+    const quadrados = 64;
+    var totalGraos = 0n;
+
+    for (let i = 0; i < quadrados; i++) {
+        totalGraos += 2n ** BigInt(i);
+    }
+
+    document.write("Total dos grãos: " + totalGraos);
+</script>

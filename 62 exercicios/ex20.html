@@ -1,0 +1,20 @@
+<meta charset = "UTF-8">
+
+<script>
+	alert("Identificação de Triângulo!!!");
+	var a = +prompt("Digite o primeiro lado: ");
+	var b = +prompt("Digite o segundo lado: ");
+	var c = +prompt("Digite o terceiro lado: ");
+
+	if ((a + b) > c && (a + c) > b && (b + c) > a) {
+		if ((a == b) && (a == c) && (b == c)) {
+			document.write("Triângulo Equilátero");
+		} else if ((a != b) && (a != c) && (b != c)) {
+			document.write("Triângulo Escaleno");
+		} else if ((a == b) || (a == c) || (b == c)) {
+			document.write("Triângulo Isósceles");
+		}
+	} else {
+		document.write("Não é um triângulo");
+	}
+</script>

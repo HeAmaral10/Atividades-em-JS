@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    alert("Índice de Poluição");
+
+    do {
+        var indice = +prompt("Digite o índice de poluição: ");
+
+        if (indice <= 0.25) {
+            window.alert("Índice de poluição aceitável");
+        } else if (indice <= 0.3 && indice > 0.25) {
+            window.alert("As indústrias do 1º grupo são intimadas a suspenderem suas atividades");
+        } else if (indice <= 0.4 && indice > 0.3) {
+            window.alert("As industrias do 1º e 2º grupo são intimadas a suspenderem suas atividades");
+        } else {
+            window.alert("Todos os grupos devem ser notificados a paralisarem suas atividades");
+        }
+        var resposta = prompt("Deseja encerrar o programa? (S/N)");
+    } while (resposta === "N" || resposta === "n");
+</script>

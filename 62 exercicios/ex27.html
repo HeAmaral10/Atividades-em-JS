@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+    alert("Conversão da base numérica");
+
+    do {
+        var opcao = +prompt("1 - Adição, 2 - Subtração, 3 - Multiplicação, 4 - Divisão, Informe a opção: ");
+
+        switch (opcao) {
+        case 1:
+            var n1 = +prompt("Digite o primeiro número: ");
+            var n2 = +prompt("Digite o segundo número: ");
+            var soma = n1 + n2;
+            window.alert("Valor da adição: " + soma);
+            var resposta = prompt("Quer continuar (S/N)?");
+            break;
+
+        case 2:
+            var n1 = +prompt("Digite o primeiro número: ");
+            var n2 = +prompt("Digite o segundo número: ");
+            var subtracao = n1 - n2;
+            window.alert("Valor da subtração: " + subtracao);
+            var resposta = prompt("Quer continuar (S/N)?");
+            break;
+
+        case 3:
+            var n1 = +prompt("Digite o primeiro número: ");
+            var n2 = +prompt("Digite o segundo número: ");
+            var multiplicacao = n1 * n2;
+            window.alert("Valor da multiplicação: " + multiplicacao);
+            var resposta = prompt("Quer continuar (S/N)?");
+            break;
+
+        case 4:
+            var n1 = +prompt("Digite o primeiro número: ");
+            var n2 = +prompt("Digite o segundo número: ");
+            var divisao = n1 / n2;
+            window.alert("Valor da divisao: " + divisao);
+            var resposta = prompt("Quer continuar (S/N)?");
+            break;
+
+        default:
+            window.alert("Digite uma opção válida");
+            var resposta = prompt("Quer continuar (S/N)?");
+            break;
+        }
+    } while (resposta === "S" || resposta === "s");
+
+</script>

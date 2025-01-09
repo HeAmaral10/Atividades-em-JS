@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    alert("Pares e Ímpares");
+
+    var numero;
+    var soma_par = 0;
+    var soma_impar = 0;
+
+
+    do {
+        numero = +prompt("Digite um número (para encerrar o programa, digite um número negativo): ");
+        if (numero >= 0) {
+            if (numero % 2 == 0) {
+                soma_par = soma_par + numero;
+            } else {
+                soma_impar = soma_impar + numero;
+            }
+        }
+    } while (numero >= 0);
+
+    document.write("Soma dos números pares: " + soma_par + "<br>");
+    document.write("Soma dos números ímpares: " + soma_impar);
+</script>

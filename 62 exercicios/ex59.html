@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    alert("Quadrante");
+
+    function verifica_quadrante(x, y) {
+        if (x > 0 && y > 0) {
+            document.write("1º Quadrante");
+        } else if (x > 0 && y < 0) {
+            document.write("4º Quadrante");
+        } else if (x < 0 && y > 0) {
+            document.write("2º Quadrante");
+        } else {
+            document.write("3º Quadrante");
+        }
+    }
+
+    var x = +prompt("Digite a coordenada x: ");
+    var y = +prompt("Digite a coordenada y: ");
+    verifica_quadrante(x, y);
+</script>

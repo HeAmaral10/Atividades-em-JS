@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    alert("Comissão do vendedor");
+
+    var identify = +prompt("Digite a identificação do vendedor: ");
+    var cod_peca = +prompt("Digite o código da peça: ");
+    var pre_peca = +prompt("Digite o preço unitário da peça: ");
+    var qua_ven = +prompt("Digite a quantidade vendida: ");
+
+    var pre_total = pre_peca * qua_ven;
+    var comissao = (pre_total * 5) / 100;
+
+    document.write("Identificação do vendedor: " + identify + "<br>");
+    document.write("Código da peça: " + cod_peca + "<br>");
+    document.write("Preço unitário da peça: " + pre_peca + "<br>");
+    document.write("Quantidade vendida: " + qua_ven + "<br>");
+    document.write("Preço total da venda: R$" + pre_total + "<br>");
+    document.write("Comissão: R$" + comissao);
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    alert("Alunos acima da média");
+
+    var quan_alunos = +prompt("Digite a quantidade de alunos: ");
+    var vetor = new Array(quan_alunos);
+    var media = 0;
+    var alu_sete = 0;
+    var alu_cinco = 0;
+
+    for (var i = 0; i < vetor.length; i++) {
+        vetor[i] = +prompt("Digite a " + (i + 1) + " nota: ");
+        if (vetor[i] > 7) {
+            alu_sete = alu_sete + 1;
+        }
+        if (vetor[i] > 5) {
+            alu_cinco = alu_cinco + 1;
+        }
+        media = media + vetor[i];
+    }
+    media = media / quan_alunos;
+    if (alu_cinco == 0) {
+        document.write("Média dos alunos: " + media + "<br>");
+        document.write("Não há nenhum aluno com nota acima de 5");
+    } else {
+        document.write("Média dos alunos: " + media + "<br>");
+        document.write("Alunos com nota acima de 7.0: " + alu_sete);
+    }
+</script>

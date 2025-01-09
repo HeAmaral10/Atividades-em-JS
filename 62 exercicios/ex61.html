@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    alert("Hipotenusa");
+
+    function hipotenusa(base, altura) {
+        var hipotenusa = (base ^ 2) + (altura ^ 2);
+        hipotenusa = Math.sqrt(hipotenusa);
+        var area = (base * altura) / 2;
+        document.write("A hipotenusa é : " + hipotenusa + "<br>");
+        document.write("A área é: " + area);
+    }
+
+    var base = +prompt("Digite a base do triângulo: ");
+    var altura = +prompt("Digite a altura do triângulo: ");
+    hipotenusa(base, altura);
+</script>

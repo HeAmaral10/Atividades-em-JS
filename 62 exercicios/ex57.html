@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior e média");
+
+    var tam_vetor = +prompt("Digite o tamanho do vetor: ");
+    var vetor = new Array(tam_vetor);
+    var maior = 0;
+    var media = 0;
+
+    for (var i = 0; i < vetor.length; i++) {
+        vetor[i] = +prompt("Digite o " + (i + 1) + "º número: ");
+        if (i == 0) {
+            maior = vetor[i];
+        } else {
+            if (vetor[i] > maior) {
+                maior = vetor[i];
+            }
+        }
+        media = media + vetor[i];
+    }
+    media = media / tam_vetor;
+    document.write("Maior valor: " + maior + "<br>");
+    document.write("Média: " + media);
+</script>

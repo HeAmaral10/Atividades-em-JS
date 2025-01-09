@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    alert("Fatorial");
+
+    var quantidade = +prompt("Digite a quantidade números a ser processados: ");
+    var fatorial = 1;
+
+    for (var i = 0; i < quantidade; i++) {
+        var numero = +prompt("Digite um número: ");
+        for (var j = 1; j <= numero; j++) {
+            if (j != 0) {
+                fatorial = fatorial * j;
+            }
+        }
+        window.alert("Fatorial: " + fatorial);
+    }
+
+</script>

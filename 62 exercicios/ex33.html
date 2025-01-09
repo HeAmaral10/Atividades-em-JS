@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    alert("Salário operário");
+
+    do {
+        var c = +prompt("Digite o código do operário: ");
+        var n = +prompt("Digite o número de horas trabalhadas: ");
+        if (n > 50) {
+            var excedente = n - 50;
+            var salario = 50 * 10;
+            var salario_excedente = excedente * 20;
+            var salario_total = salario + salario_excedente;
+            window.alert("Salário total: R$" + salario_total);
+            window.alert("Salário excedente: R$" + salario_excedente);
+        } else {
+            var salario_total = n * 10;
+            var salario_excedente = 0;
+            window.alert("Salário total: R$" + salario_total);
+            window.alert("Salário excedente: R$" + salario_excedente);
+        }   
+        var resposta = prompt("Deseja encerrar o programa? (S/N)");
+    } while (resposta === "N" || resposta === "n");
+</script>

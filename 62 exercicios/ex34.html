@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    alert("Par, ímpar, positivo ou negativo");
+
+    do {
+        var numero = +prompt("Digite um número: ");
+
+        if (numero % 2 == 0) {
+            window.alert("Par");
+        } else {
+            window.alert("Ímpar");
+        }
+        if (numero >= 0) {
+            window.alert("Positivo");
+        } else {
+            window.alert("Negativo");
+        }
+
+        var resposta = prompt("Deseja encerrar o programa? (S/N)");
+    } while (resposta === "N" || resposta === "n");
+</script>

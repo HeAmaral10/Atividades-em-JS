@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior, menor e média");
+
+    var menor, maior;
+    var media = 0;
+
+    for (var i = 1; i <= 10; i++) {
+        var numero = +prompt("Digite o " + i + "º número: ");
+        if (i == 1) {
+            menor = numero;
+            maior = numero;
+        } else if (numero < menor) {
+            menor = numero;
+        } else if (numero > maior) {
+            maior = numero;
+        }
+        media = media + numero;
+    }
+
+    media = media / 10;
+
+    document.write("Maior valor: " + maior + "<br>");
+    document.write("Menor valor: " + menor + "<br>");
+    document.write("Média: " + Math.round(media));
+</script>

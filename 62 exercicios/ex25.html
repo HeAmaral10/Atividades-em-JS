@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    alert("Média da turma");
+
+    var nota, matricula, media;
+    var nota_turma = 0;
+    var contador = 0;
+
+    do {
+        matricula = +prompt("Digite a matrícula do aluno (para encerrar o programa, digite um número negativo): ");
+        if (matricula >= 0) {
+            nota = +prompt("Digite a nota do aluno: ");
+            nota_turma = nota_turma + nota;
+            contador = contador + 1;
+        }
+    } while (matricula >= 0);
+
+    media = nota_turma / contador;
+
+    document.write("Média da turma: " + media);
+</script>

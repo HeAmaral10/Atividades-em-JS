@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior e menor");
+
+    var menor, maior;
+    var contador = 0;
+
+    do {
+        var numero = +prompt("Digite um número (0 para sair): ");
+        if (contador == 0) {
+            menor = numero;
+            maior = numero;
+        } else if (numero < menor && numero != 0) {
+            menor = numero;
+        } else if (numero > maior) {
+            maior = numero;
+        }
+        contador = contador + 1;
+    } while (numero != 0);
+
+    document.write("Maior valor: " + maior + "<br>");
+    document.write("Menor valor: " + menor);
+</script>

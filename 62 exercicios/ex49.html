@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    alert("Sorteio");
+
+    var sorteio = Math.floor(Math.random() * 100);
+    var tentativas = 0;
+    
+    do {
+        var numero = +prompt("Digite um número entre 0 e 100: ");
+        if (numero != sorteio) {
+            tentativas = tentativas + 1;
+            if (numero > sorteio) {
+                window.alert("O número sorteado é menor");
+            } else {
+                window.alert("O número sorteado é maior");
+            }
+        }
+    } while (numero != sorteio);
+
+    document.write("Número sorteado: " + sorteio + "<br>");
+    document.write("Tentativas feitas: " + tentativas);
+</script>

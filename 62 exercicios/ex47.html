@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    alert("Candidatas Aptas");
+
+    var vetor_candidatas = new Array();
+    vetor_candidatas = ["Barbara", "Caroline", "Suzana", "Juliana", "Giovanna", "Ana", "Laura", "Amanda", "Rafaela", "Eliane", "Lina", "Nayla", "Solange", "Julia", "Agatha", "Adenizia", "Edileuza", "Ines", "Tania", "Rose"];
+    var vetor_idade = new Array();
+    vetor_idade = [18, 21, 23, 24, 19, 20, 21, 23, 17, 18, 19, 25, 19, 17, 18, 16, 39, 40, 16, 20];
+
+    for (var i = 0; i < 20; i++) {
+        if (vetor_idade[i] > 17 && vetor_idade[i] < 21) {
+            document.write("A candidata " + vetor_candidatas[i] + " está apta para participar do processo" + "<br>");
+        }
+    }
+</script>

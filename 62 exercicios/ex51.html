@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    alert("Um, três e quatro");
+
+    var vetor = new Array(100);
+    var um = 0;
+    var tres = 0;
+    var quatro = 0;
+
+    for (var i = 0; i < 100; i++) {
+        vetor[i] = +prompt("Digite o " + (i + 1) + "º número (digite -1 para sair): ");
+        if (vetor[i] == -1) {
+            i = 99;
+        }
+        if (vetor[i] == 1) {
+            um = um + 1;
+        }
+        if (vetor[i] == 3) {
+            tres = tres + 1;
+        }
+        if (vetor[i] == 4) {
+            quatro = quatro + 1;
+        }
+    }
+    document.write("1: " + um + " vezes" + "<br>");
+    document.write("3: " + tres + " vezes" + "<br>");
+    document.write("4: " + quatro + " vezes");
+</script>

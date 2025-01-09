@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    alert("Pares e múltiplos de 5");
+
+    var vetor = new Array(50);
+    var pares = 0;
+    var mul_cinco = 0;
+
+    for (var i = 0; i < 50; i++) {
+        vetor[i] = +prompt("Digite o " + (i + 1) + "º número: ");
+        if (vetor[i] % 2 == 0) {
+            pares = pares + 1;
+        }
+        if (vetor[i] % 5 == 0) {
+            mul_cinco = mul_cinco + 1;
+        }
+    }
+
+    document.write("Pares: " + pares + "<br>");
+    document.write("Múltiplos de 5: " + mul_cinco);
+</script>

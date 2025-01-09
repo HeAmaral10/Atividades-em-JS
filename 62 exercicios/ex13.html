@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Exercício 13");
+
+    // Entrada de dados
+    var n1 = +prompt("Digite o primeiro número real: ");
+    var n2 = +prompt("Digite o segundo número real: ");
+    var opcao = +prompt("Digite uma opção (1 - Verificar se um dos números lidos é ou não múltiplo do outro, 2 - Verificar se os dois números lidos são pares, 3 - Verificar se a média dos dois números é maior ou igual a 7, 4 - Sair): ");
+
+    switch (opcao) {
+        case 1:
+            if ((n1 % n2 == 0) || (n2 % n1 == 0)) {
+                document.write("Um dos números é múltiplo do outro");
+            } else {
+                document.write("Não são múltiplos");
+            }
+            break;
+
+        case 2: // Ordem decrescente
+            if (n1 % 2 == 0 && n2 % 2 == 0) {
+                document.write("Os dois números são pares");
+            } else {
+                document.write("Um dos números não é par");
+            }
+            break;
+
+        case 3:
+            var media = (n1 + n2) / 2;
+            if (media >= 7) {
+                document.write("Está na média");
+            } else {
+                document.write("Está abaixo da média");
+            }
+            break;
+
+        case 4:
+            window.alert("Saindo...");
+            document.write("Programa encerrado");
+            break;
+
+       	default:
+            window.alert("Escolha uma opção válida.");
+            document.write("Escolha uma opção válida.");
+            break;
+    }
+</script>

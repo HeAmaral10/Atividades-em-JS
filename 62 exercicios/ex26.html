@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior e menor");
+
+    var numero, menor_numero, maior_numero;
+    var contador = 0;
+
+    do {
+        numero = +prompt("Digite um número (digite um número negativo para finalizar o programa): ");
+        if (numero >= 0) {
+            if (contador == 0) {
+            menor_numero = numero;
+            } else {
+            if (numero < menor_numero) {
+                menor_numero = numero;
+            }
+            }
+            if (contador == 0) {
+            maior_numero = numero;
+            } else {
+            if (numero > maior_numero) {
+                maior_numero = numero;
+            }
+            }
+        }
+        contador = contador + 1;
+    } while (numero >= 0);
+
+    document.write("Maior número: " + maior_numero + "<br>");
+    document.write("Menor número: " + menor_numero);
+</script>

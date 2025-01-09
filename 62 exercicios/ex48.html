@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    alert("Valores iguais");
+
+    var tam_vetor = +prompt("Digite o tamanho dos vetores: ");
+    var v1 = new Array(tam_vetor);
+    var v2 = new Array(tam_vetor);
+    var igual = 0;
+
+    for (var i = 0; i < v1.length; i++) {
+        v1[i] = +prompt("Digite o " + (i + 1) + "º número inteiro: ");
+    }
+    for (var i = 0; i < v2.length; i++) {
+        v2[i] = +prompt("Digite o " + (i + 1) + "º número inteiro: ");
+    }
+    for (var i = 0; i < v1.length; i++) {
+        if (v1[i] == v2[i]) {
+            igual = igual + 1;
+        }
+    }
+
+    document.write("Os vetores são iguais em " + igual + " posições"); 
+</script>

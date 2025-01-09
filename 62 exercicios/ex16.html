@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Média das notas");
+
+    // Entrada de dados
+    var n1 = +prompt("Digite a primeira nota: ");
+    var n2 = +prompt("Digite a segunda nota: ");
+    var n3 = +prompt("Digite a terceira nota: ");
+    var n4 = +prompt("Digite a quarta nota: ");
+    var media = (n1 + n2 + n3 + n4) / 4;
+
+    if (media >= 7) {
+        document.write("Aprovado" + "<br>");
+        document.write("Média: " + media);
+    } else if (media < 7) {
+        var nota_recuperacao = +prompt("Digite a nota de recuperação: ");
+        var nova_media = (n1 + n2 + n3 + n4 + nota_recuperacao) / 5;
+        if (nova_media >= 7) {
+            document.write("Aprovado na recuperação" + "<br>");
+            document.write("Média: " + nova_media);
+        } else {
+            document.write("Reprovado" + "<br>");
+            document.write("Média: " + nova_media);
+        }
+    }
+</script>

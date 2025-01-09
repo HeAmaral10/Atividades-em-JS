@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Diferença do maior para o menor");
+
+    // Entrada de dados
+    var n1 = +prompt("Digite o primeiro número real: ");
+    var n2 = +prompt("Digite o segundo número real: ");
+    var diferenca;
+
+    if (n1 > n2) {
+        diferenca = n1 - n2;
+        document.write("Diferença: " + diferenca);
+    } else if (n2 > n1) {
+        diferenca = n2 - n1;
+        document.write("Diferença: " + diferenca);
+    } else {
+        document.write("Os dois números são iguais");
+    }
+</script>

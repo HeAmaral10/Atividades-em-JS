@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior e menor");
+
+    var n1 = +prompt("Digite o primeiro número: ");
+    var n2 = +prompt("Digite o segundo número: ");
+    var n3 = +prompt("Digite o terceiro número: ");
+
+    if (n1 >= n2 && n1 >= n3) {
+                if (n2 >= n3) {
+                    var men_mai = n1 * n3;
+                    var mai_men = n1 / n3;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);
+                } else {
+                    var men_mai = n1 * n2;
+                    var mai_men = n1 / n2;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);
+                }
+            } else if (n2 >= n1 && n2 >= n3) {
+                if (n1 >= n3) {
+                    var men_mai = n2 * n3;
+                    var mai_men = n2 / n3;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);
+                } else {
+                    var men_mai = n2 * n1;
+                    var mai_men = n2 / n1;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);
+                }
+            } else {
+                if (n1 >= n2) {
+                    var men_mai = n3 * n2;
+                    var mai_men = n3 / n2;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);
+                } else {
+                    var men_mai = n3 * n1;
+                    var mai_men = n3 / n1;
+                    document.write("Menor valor lido multiplicado pelo maior: " + men_mai + "<br>");
+                    document.write("Maior valor dividido pelo menor: " + mai_men);                }
+            }
+
+</script>

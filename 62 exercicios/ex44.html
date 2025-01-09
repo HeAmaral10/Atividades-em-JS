@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    alert("Vetor em ordem inversa");
+
+    var tam_vetor = +prompt("Digite o tamanho do vetor: ");
+    var vetor = new Array(tam_vetor);
+
+    for (var i = 0; i < vetor.length; i++) {
+        vetor[i] = +prompt("Digite o " + (i + 1) + "º número: ");
+    }
+    for (var i = vetor.length; i > 0; i--) {
+        document.write(vetor[i - 1] + "<br>");
+    }
+</script>

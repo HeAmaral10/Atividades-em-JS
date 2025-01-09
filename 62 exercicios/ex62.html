@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    alert("Par ou Ímpar");
+
+    function verifica(n) {
+        var resto = n % 2;
+        if (resto == 0) {
+            document.write("Par");
+        } else {
+            document.write("Ímpar");
+        }
+    }
+
+    var n = +prompt("Digite um número: ");
+    verifica(n);
+</script>

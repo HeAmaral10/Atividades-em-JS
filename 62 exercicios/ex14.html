@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    alert("Relacionamento entre números");
+
+    // Entrada de dados
+    var n1 = +prompt("Digite o primeiro número real: ");
+    var n2 = +prompt("Digite o segundo número real: ");
+    
+    if (n1 == n2) {
+        document.write(n1 + " = " + n2 + "<br>");
+    } else {
+        document.write(n1 + " != " + n2 + "<br>");
+    }
+    if (n1 > n2) {
+        document.write(n1 + " > " + n2 + "<br>");
+        document.write(n2 + " < " + n1 + "<br>");
+    } else if (n2 > n1) {
+        document.write(n2 + " > " + n1 + "<br>");
+        document.write(n1 + " < " + n2 + "<br>");
+    }
+    if (n1 >= n2) {
+        document.write(n1 + " >= " + n2 + "<br>");
+        document.write(n2 + " <= " + n1 + "<br>");
+    } else if (n2 >= n1) {
+        document.write(n2 + " >= " + n1 + "<br>");
+        document.write(n1 + " <= " + n2 + "<br>");
+    }
+</script>

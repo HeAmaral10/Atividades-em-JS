@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    alert("Maior, menor e igual a x");
+
+    var vetor = new Array(10);
+    for (var i = 0; i < vetor.length; i++) {
+        vetor[i] = +prompt("Digite o " + (i + 1) + "º número: ");
+    }
+    var x = +prompt("Digite o valor de x: ");
+    var maior = 0;
+    var menor = 0;
+    var igual = 0;
+    for (var i = 0; i < vetor.length; i++) {
+        if (vetor[i] == x) {
+            igual = igual + 1;
+        } else if (vetor[i] > x) {
+            maior = maior + 1;
+        } else if (vetor[i] < x) {
+            menor = menor + 1;
+        }
+    }
+    document.write("Maior que x: " + maior + "<br>");
+    document.write("Menor que x: " + menor + "<br>");
+    document.write("Igual a x: " + igual);
+</script>

@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+<script>
+    alert("Conversão de temperatura e Peso Ideal");
+
+    do {
+        var opcao = +prompt("1 - Conversão de Graus Celsius em Graus Fahrenheit, 2 - Conversão de Graus Fahrenheit em Graus Celsius, 3 - Peso Ideal do homem, 4 - Peso Ideal da mulher: ");
+
+        switch (opcao) {
+        case 1:
+            var celsius = +prompt("Digite a temperatura em celsius: ");
+            var fahrenheit = (9 * celsius + 160) / 5;
+            window.alert("Temperatura em Fahrenheit: " + Math.round(fahrenheit));
+            break;
+
+        case 2:
+            var fahrenheit = +prompt("Digite a temperatura em fahrenheit: ");
+            var celsius = (fahrenheit - 32) * 5 / 9;
+            window.alert("Temperatura em Celsius: " + Math.round(celsius));
+            break;
+
+        case 3:
+            var altura = +prompt("Digite a sua altura: ");
+            var peso = +prompt("Digite o seu peso: ");
+            var peso_ideal = (72.7*altura) - 58;
+            if (peso > peso_ideal) {
+                window.alert("Está acima do peso ideal");
+            } else if (peso < peso_ideal) {
+                window.alert("Abaixo do peso ideal");
+            } else {
+                window.alert("Está no peso ideal");
+            }
+            break;
+
+        case 4:
+            var altura = +prompt("Digite a sua altura: ");
+            var peso = +prompt("Digite o seu peso: ");
+            var peso_ideal = (62.1*altura) - 44.7;
+            if (peso > peso_ideal) {
+                window.alert("Está acima do peso ideal");
+            } else if (peso < peso_ideal) {
+                window.alert("Abaixo do peso ideal");
+            } else {
+                window.alert("Está no peso ideal");
+            }
+            break;
+
+        default:
+            window.alert("Digite uma opção inválida");
+            break;
+        }
+
+        var resposta = prompt("Deseja encerrar o programa? (S/N)");
+    } while (resposta === "N" || resposta === "n");
+</script>

@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    alert("Cálculo de combustível");
+
+    var tempo_gasto = +prompt("Digite o tempo gasto na viagem: ");
+    var vel_media = +prompt("Digite a velocidade média: ");
+
+    var distancia = tempo_gasto * vel_media;
+
+    var litros_usados = distancia / 12;
+
+    document.write("Velocidade média: " + vel_media + " KM/H" + "<br>");
+    document.write("Tempo gasto: " + tempo_gasto + " horas" + "<br>");
+    document.write("Distância percorrida: " + distancia + " km" + "<br>");
+    document.write("Quantidade de litros usados: " + litros_usados.toFixed(2) + " litros" + "<br>");
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    alert("Produto escalar entre vetores");
+
+    var tam_vetor = +prompt("Digite o tamanho do vetores: ");
+    var vetor_x = new Array(tam_vetor);
+    var vetor_y = new Array(tam_vetor);
+    var produto_escalar = 0;
+
+    for (var i = 0; i < vetor_x.length; i++) {
+        vetor_x[i] = +prompt("Digite o " + (i + 1) + "º número do vetor x: ");
+    }
+    for (var i = 0; i < vetor_y.length; i++) {
+        vetor_y[i] = +prompt("Digite o " + (i + 1) + "º número do vetor y: ");
+    }
+    for (var i = 0; i < tam_vetor; i++) {
+        var mult_vetor = vetor_x[i] * vetor_y[i];
+        produto_escalar = produto_escalar + mult_vetor;
+    }
+    document.write("Produto escalar entre os vetores: " + produto_escalar);
+</script>

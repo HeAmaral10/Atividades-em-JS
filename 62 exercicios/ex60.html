@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    alert("Reajuste");
+
+    function reajuste(salario, indice) {
+        var reajuste = (salario * indice) / 100;
+        var novo_salario = salario + reajuste;
+        document.write("Salário com reajuste: R$" + novo_salario);
+    }
+
+    var salario = +prompt("Digite o seu salário: ");
+    var indice = +prompt("Digite o índice de reajuste: ");
+    reajuste(salario, indice);
+</script>

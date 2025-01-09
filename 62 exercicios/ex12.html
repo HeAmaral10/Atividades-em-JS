@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    alert("Ordem decrescente");
+
+    var n1 = +prompt("Digite o primeiro número: ");
+    var n2 = +prompt("Digite o segundo número: ");
+    var n3 = +prompt("Digite o terceiro número: ");
+
+    if (n1 >= n2 && n1 >= n3) {
+                if (n2 >= n3) {
+                    document.write("Ordem Decrescente: " + n1 + ", " + n2 + ", " + n3);
+                } else {
+                    document.write("Ordem Decrescente: " + n1 + ", " + n3 + ", " + n2);
+                }
+            } else if (n2 >= n1 && n2 >= n3) {
+                if (n1 >= n3) {
+                    document.write("Ordem Decrescente: " + n2 + ", " + n1 + ", " + n3);
+                } else {
+                    document.write("Ordem Decrescente: " + n2 + ", " + n3 + ", " + n1);
+                }
+            } else {
+                if (n1 >= n2) {
+                    document.write("Ordem Decrescente: " + n3 + ", " + n1 + ", " + n2);
+                } else {
+                    document.write("Ordem Decrescente: " + n3 + ", " + n2 + ", " + n1);
+                }
+            }
+
+</script>
